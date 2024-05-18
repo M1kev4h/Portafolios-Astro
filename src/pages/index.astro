@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Badge from "../components/Badge.astro";
 import Redes from "src/components/Redes.astro";
-import SectioContainer from "src/components/SectioContainer.astro"
+import SectioContainer from "src/components/SectioContainer.astro";
 import LinkedIn from "src/components/Icons/LinkedIn.astro";
 import GitHub from "src/components/Icons/GitHub.astro";
 import Mail from "src/components/Icons/Mail.astro";
@@ -10,7 +10,8 @@ import Experience from "src/components/Experience.astro";
 import Briefcase from "src/components/Icons/Briefcase.astro";
 import Code from "src/components/Icons/Code.astro";
 import Proyects from "src/components/Proyects.astro";
-import Footer from "../components/Footer.astro"
+import Footer from "../components/Footer.astro";
+import AboutMe from "src/components/AboutMe.astro";
 ---
 
 <Layout title="Porfolio de Michael Venade -- Desarollador y Programador Wep">
@@ -18,28 +19,34 @@ import Footer from "../components/Footer.astro"
     <SectioContainer class="py-44 pb-34">
       <div class="max-w-xl">
         <div class="flex gap-4 mb-4">
-        <img
-        class="rounded-full shadow-lg size-16"
-          src="/avatar.webp"
-          alt="Mi foto"
-        />
-      </div>
-      <h1 class="text-white text-3xl md:4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
-        Hola,soy Michael
-        <a
-          href="https://www.linkedin.com/in/michael-venade-1934112b1/"
-          target="_blank"
-          rel="noopener noreferer"
-          class="flex justify-center items-center"
-        >
-          <Badge>Disponible como desarollador Feont-end</Badge>
-        </a>
+          <img
+            class="rounded-full shadow-lg size-16"
+            src="/avatar.webp"
+            alt="Mi foto"
+          />
         </div>
-      </h1>
-      <h2 class="text-2xl  text-wrap msx-w-[700px]">
-        <span class="text-yellow-200">Desarollador Junior</span><span class="opacity-80">,con mucho entusiasmo por la programacion. <span class="text-blue-300">De
-			Canelones,Uruguay</span>. Especialisado en el desarollo de paginas webs
-		  </h2></span>
+        <h1
+          class="text-white text-3xl md:4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
+        >
+          Hola,soy Michael
+          <a
+            href="https://www.linkedin.com/in/michael-venade-1934112b1/"
+            target="_blank"
+            rel="noopener noreferer"
+            class="flex justify-center items-center"
+          >
+            <Badge>Disponible como desarollador Feont-end</Badge>
+          </a>
+        </h1>
+      </div>
+      <h2 class="text-2xl text-wrap msx-w-[700px]">
+        <span class="text-yellow-200">Desarollador Junior</span><span
+          class="opacity-80"
+          >,con mucho entusiasmo por la programacion. <span
+            class="text-blue-300">De Canelones,Uruguay</span
+          >. Especialisado en el desarollo de paginas webs
+        </span>
+      </h2>
       <nav class="flex gap-4 mt-6 flex-wrap">
         <Redes href="https://www.linkedin.com/in/michael-venade-1934112b1/">
           <LinkedIn class="size-5 lg:size-6" />
@@ -56,27 +63,31 @@ import Footer from "../components/Footer.astro"
       </nav>
     </SectioContainer>
 
-	<SectioContainer 
-  id="Experiencia" 
-  >
-		<h2 class="text-4xl font-semibold mb-6 flex gap-x-3 items-center">
-			<Briefcase class="size-10"/>
-			Experiencia Laboral
-		</h2>
-		<Experience>
-	</SectioContainer>
+    <SectioContainer id="Experiencia">
+      <h2 class="text-4xl font-semibold mb-6 flex gap-x-3 items-center">
+        <Briefcase class="size-10" />
+        Experiencia Laboral
+      </h2>
+      <Experience />
 
-	<SectioContainer id="Projectos">
-		<h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center pt-28">
-			<Code class="size-10"/>
-			Proyectos
-		</h2>
-		<Proyects/>
-	</SectioContainer>
-<SectioContainer id="Contacto">
-  <Footer />
-</SectioContainer>
+      <SectioContainer id="Projectos">
+        <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center pt-28">
+          <Code class="size-10" />
+          Proyectos
+        </h2>
+        <Proyects />
+      </SectioContainer>
+      <SectioContainer id="SobreMi">
+        <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center pt-28">
+          Sobre mí
+        </h2>
+        <AboutMe />
+      </SectioContainer>
+      <SectioContainer id="Contacto">
+        <Footer />
+      </SectioContainer>
+    </SectioContainer>
   </main>
-</Layout>
 
-<!-- Gracias  Midudev por la plantilla de porfolio -->
+  <!-- Gracias  Midudev por la plantilla de porfolio --></Layout
+>

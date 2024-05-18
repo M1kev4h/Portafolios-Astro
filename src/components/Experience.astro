@@ -1,0 +1,30 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+
+const EXPERIENCE =[
+    {
+        date: 'Mayo 2024',
+        title: 'CV',
+        description: 'Para mas detalles sobre mi informacion personal',
+        link:'https://cv-minimalista-astro-idc6yt616-m1kev4hs-projects.vercel.app/',
+    },
+    {
+        date: 'Mayo 2024',
+        title: 'No Country',
+        description: 'Practias no remuneradas en donde trabaje como ejercicio con un grupo para simular una empresa y sacar adelantes diferentes proyectos'
+    },
+]
+---
+
+
+<ol class="relative border-s border-gray-200 ml-3">
+    {
+        EXPERIENCE.map(experiencie =>(
+        <li class="mb-10 ms-4">
+        <ExperienceItem {...experiencie}/>
+        </li>    
+        ))
+    }
+ 
+</ol>
+
